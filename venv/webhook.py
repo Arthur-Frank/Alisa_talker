@@ -23,7 +23,7 @@ def main():
         response["response"]["text"] = "Привет! Как твои дела? Купи слона!"
     else:
         if req["request"]["original_utterance"]:
-            text = "Все говрят "+req["request"]["original_utterance"] + " а ты купи слона!"
+            text = "Все говорят "+req["request"]["original_utterance"] + " а ты купи слона!"
             response["response"]["text"] = text
 
     return json.dumps(response)
